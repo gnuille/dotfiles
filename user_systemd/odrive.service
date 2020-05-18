@@ -1,0 +1,8 @@
+[Unit]
+Description=Rclone onedrive mount
+
+[Service]
+ExecStart=/usr/bin/rclone --vfs-cache-mode writes mount onedrive: /home/teleportex/OneDrive
+
+[Install]
+WantedBy=default.target
